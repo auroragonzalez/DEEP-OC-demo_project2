@@ -1,0 +1,38 @@
+{
+    "title": "demo_project2",
+    "summary": "Second attempt of a demo project ",
+    "description": [
+		"This is demo_project2 application using DEEPaaS API",
+           "",
+           "**References**\n",
+           ""
+	],
+    "keywords": [
+        "docker",
+        "api-v2"
+    ],
+    "license": "MIT",
+    "date_creation": "2021-03-29",
+    "sources": {
+		"dockerfile_repo": "auroragonzalez/DEEP-OC-demo_project2",
+		"docker_registry_repo": "auroragonzalez/deep-oc-demo_project2",
+		"code": "auroragonzalez/demo_project2"
+	},
+    "continuous_integration": {
+        "build_status_badge": "https://jenkins.indigo-datacloud.eu/buildStatus/icon?job=Pipeline-as-code/DEEP-OC-org/DEEP-OC-demo_project2/master",
+        "build_status_url": "https://jenkins.indigo-datacloud.eu/job/Pipeline-as-code/job/DEEP-OC-org/job/DEEP-OC-demo_project2/job/master"
+    },
+    "tosca": [
+        {
+            "title": "Mesos (CPU)",
+            "url": "https://raw.githubusercontent.com/indigo-dc/tosca-templates/master/deep-oc/deep-oc-marathon-webdav.yml",
+            "inputs": [
+                "rclone_conf",
+                "rclone_url",
+                "rclone_vendor",
+                "rclone_user",
+                "rclone_pass"
+            ]
+        }
+    ]
+}
